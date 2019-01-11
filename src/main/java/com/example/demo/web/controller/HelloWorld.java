@@ -30,6 +30,6 @@ public class HelloWorld {
     @RequestMapping(value = "/helloWorld", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult createComment() {
-        return new CommonResult(false, "HelloWorld!", 0, "成功");
+        return new CommonResult(false, "HelloWorld Test1", 0, "成功");
     }
 }
