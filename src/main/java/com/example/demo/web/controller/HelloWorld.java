@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 /**
  * @Description: 测试API接口
  * @Author: zhangrongyao
- * @CreateDate: 2018/7/24 9:39
+ * @CreateDate: 2019/1/17 9:39
  * @UpdateUser: zhangrongyao
- * @UpdateDate: 2018/7/24 9:39
+ * @UpdateDate: 2019/1/17 9:39
  * @UpdateRemark: 修改内容
  * @Version: 1.0
  */
@@ -30,6 +30,6 @@ public class HelloWorld {
     @RequestMapping(value = "/helloWorld", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult createComment() {
-        return new CommonResult(false, "Jenkins持续集成测试", 0, "成功");
+        return new CommonResult(true, "Jenkins持续集成Demo演示", 0, "成功");
     }
 }
